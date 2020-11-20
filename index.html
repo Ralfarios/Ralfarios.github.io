@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARKNIGHTS Gacha Simulator</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="resources/style/style.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a class="navLink" href="index.html">HOME</a></li>
+            <li><a class="navLink" href="about.html">ABOUT</a></li>
+        </ul>
+    </nav>
+
+    <!--TITLE-->
+    <div class="title" id="titleID">
+        <img class="image" id="titleLogo" src="resources/img/img_logo.webp" alt="logo">
+        <h1 class="heading1" id='titleHeading'>GACHA SIMULATOR</h1>
+    </div>
+
+    <br>
+
+    <!--CONTENT-->
+
+    <!--IF NO ANY ORUNDUM INPUT-->
+
+    <div class="orundum" id="orundumInput">
+        <form>
+            <label>Please input your <b>orundum</b>. <i>Minimal 600 <b>orundum</b>.</i></label>
+            <br>
+            <p id="orundumInputWarning"></p>
+            <br>
+            <input type="number" id="orundumNumber" name="orundumNumber" class="orundumForm" min=600 max=60000 required>
+            <button type="button" onclick="orundumInputFunc()" class="orundumButton blueColor">SUBMIT</button>
+        </form>
+    </div>
+
+    <!--IF THERE IS ORUNDUM -->
+
+    <div class="pullGacha hidden" id="pullGachaId">
+        <!-- <p>Your orundum is <b>${xxxxxx}</b>, how many pull do you want?</p> -->
+        <p id="pullGachaParagraph"></p>
+        <p><i>1x pull is 600 orundum. One 5 star or above is <b>guaranteed</b> for 10x pull</i></p>
+        <br>
+        <button type="button" onclick="pull1x()" class="pullGachaButton blueColor spacer">1x pull</button>
+        <button type="button" onclick="backToInputOrundum()" class="pullGachaButton redColor backButton spacer">back</button>
+        <button type="button" onclick="pull10x()" class="pullGachaButton blueColor spacer">10x pull</button>
+    </div>
+
+    <!--GACHA 1X Pull-->
+
+    <div class="hidden" id="resultGacha1PullId">
+        <div class="resultGacha1Pull">
+            <div class="cardOperator" id="cardOperator1PullId">
+                <img class="cardOperatorImage" id="operatorPic" src="resources/img/char/img_default_char.jpg" alt="default_char">
+                <div class="cardOperatorContainer">
+                    <p class="operatorRate" id="operatorRate">★★★★★★</p>
+                    <h4 class="operatorName operatorText" id="operatorName">DOCTOR</h4>
+                    <p class="operatorRole operatorText" id="operatorRole">commander</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--GACHA 10X Pull-->
+
+    <div class="resultGacha10Pull hidden" id="resultGacha10PullId">
+    </div>
+
+    <script src="resources/script/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+html {
+    background: url("../img/img_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    text-align: center;
+    padding: 16px;
+}
+
+li {
+    display: inline-block;
+    margin: 0 32px;
+}
+
+p,
+label {
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.navLink {
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 8px;
+    font-size: 12px;
+    padding-left: 6px;
+    padding-bottom: 8px
+}
+
+.navLink:hover {
+    border-bottom: 4px solid #fff;
+}
+
+.title {
+    text-align: center;
+}
+
+.heading1 {
+    font-weight: lighter;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+#titleHeading {
+    font-size: 1.8vw;
+    margin-top: 8px;
+}
+
+#titleLogo {
+    margin-top: 4vh;
+    width: 24vw;
+}
+
+.orundum,
+.pullGacha {
+    text-align: center;
+    margin-top: -2vh;
+}
+
+.orundumForm {
+    margin-right: 8px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    padding: 6px 14px;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+.orundumButton,
+.pullGachaButton {
+    border: 0;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+.blueColor {
+    background-color: #2abffc;
+}
+
+.redColor {
+    background-color: #bf0005;
+}
+
+.spacer {
+    margin: 0 40px;
+}
+
+.resultGacha1Pull {
+    margin-top: 36px;
+    display: flex;
+    justify-content: center;
+}
+
+.resultGacha10Pull {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 36px 24px;
+    justify-content: center;
+}
+
+.cardOperator {
+    background-color: #fff;
+    width: 128px;
+    height: 192px;
+    border-radius: 10px 10px 8px 8px;
+    text-align: center;
+    margin: 0 24px;
+}
+
+.cardOperatorImage {
+    border-radius: 8px 8px 0 0;
+    width: 128px;
+}
+
+.operatorText {
+    color: black;
+}
+
+.operatorRate {
+    margin-top: -32px;
+    letter-spacing: 2px;
+    font-size: 14px;
+    color: white;
+}
+
+.operatorName {
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.operatorRole {
+    margin-top: -12px;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: regular;
+}
+
+.contentAbout {
+    margin-bottom: 12vh;
+    margin-top: -4vh;
+    text-align: center;
+}
+
+.contentAboutHeading2 {
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.contentAboutParagraph {
+    margin: 4vh 16vw;
+}
+
+.hidden {
+    display: none;
+}
