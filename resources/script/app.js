@@ -5,9 +5,6 @@ var orundumInput = document.getElementById("orundumInput");
 var pullGachaParagraph = document.getElementById("pullGachaParagraph");
 var orundumInputWarning = document.getElementById("orundumInputWarning");
 var orundumNumber = document.getElementById("orundumNumber");
-var pullGachaId = document.getElementById("pullGachaId");
-var resultGacha1PullId = document.getElementById("resultGacha1PullId");
-var resultGacha10PullId = document.getElementById("resultGacha10PullId");
 
 const database = [{
         "id": "001",
@@ -209,7 +206,6 @@ function pull10x() {
     let item = []
     let gacha10Pull;
 
-
     let pull10Card = document.getElementById('resultGacha10PullId');
 
     if (orundumTemp !== 0) {
@@ -282,7 +278,7 @@ function pull10x() {
 
             } else if (item.length > 8) {
                 orundumTemp -= 600;
-                if (gacha10Pull > 75) {
+                if (gacha10Pull <= 75) {
                     star5 = Math.floor(Math.random() * 100 + 1);
                     if (star5 > 68) {
                         i = 3;
@@ -294,7 +290,7 @@ function pull10x() {
                         i = 5;
                         item.push('***** PROJEKT RED')
                     }
-                } else if (gacha10Pull <= 75) {
+                } else if (gacha10Pull > 75) {
                     star6 = Math.floor(Math.random() * 100 + 1);
                     if (star6 > 68) {
                         i = 0;
